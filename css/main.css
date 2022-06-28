@@ -133,7 +133,7 @@ body {
 }
 .brand_name_1 p, .brand_name_2 p {
   line-height: 20px;
-  color: #ffc400;
+  color: #ffbf00;
   font-family: chopin;
 }
 @media (max-width: 599px) {
@@ -235,30 +235,12 @@ body {
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
-  transition: all 0.4s ease;
-  font-size: 1.3rem;
-  cursor: pointer;
-}
-.info-container span {
-  width: 100%;
-  text-align: center;
-  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.34);
-  z-index: 99;
-}
-@media (max-width: 599px) {
-  .info-container span {
-    font-size: 12px;
-  }
-}
-
-.info-container {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  transition: all 1.5s ease;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   cursor: pointer;
-  transition: all 0.5s ease;
   opacity: 0;
   -webkit-animation-name: aniBox;
           animation-name: aniBox;
@@ -268,7 +250,20 @@ body {
           animation-delay: 4s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  cursor: pointer;
 }
+.info-container span {
+  width: 100%;
+  text-align: center;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3411764706);
+  z-index: 99;
+}
+@media (max-width: 599px) {
+  .info-container span {
+    font-size: 12px;
+  }
+}
+
 .info-container span {
   opacity: 0;
   -webkit-animation-name: aniBox;
@@ -283,9 +278,11 @@ body {
 }
 .info-container:hover::before {
   height: 100%;
+  background-color: rgba(255, 191, 0, 0.3568627451);
 }
 .info-container:hover {
-  color: #000000;
+  color: #ffffff;
+  background-color: #000000;
 }
 
 .info_wrapper {
@@ -294,13 +291,13 @@ body {
 
 .info-container::before {
   content: "";
-  height: 1%;
+  height: 2%;
   position: absolute;
   bottom: 0%;
   left: 0;
   width: 100%;
   transition: all 0.5s ease;
-  background-color: #ffdd00;
+  background-color: #ffbf00;
   -webkit-animation-name: aniBox2;
           animation-name: aniBox2;
   -webkit-animation-duration: 2s;
@@ -416,4 +413,8 @@ body {
   grid-column-start: 4;
   grid-row-end: 7;
   grid-column-end: 7;
+}
+
+#footer {
+  background: #000;
 }/*# sourceMappingURL=main.css.map */
