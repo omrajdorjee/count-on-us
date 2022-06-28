@@ -256,6 +256,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   cursor: pointer;
   transition: all 0.5s ease;
   opacity: 0;
@@ -285,6 +286,10 @@ body {
 }
 .info-container:hover {
   color: #000000;
+}
+
+.info_wrapper {
+  width: 100%;
 }
 
 .info-container::before {
